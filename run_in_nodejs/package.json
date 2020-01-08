@@ -1,0 +1,19 @@
+{
+  "name": "run-in-nodejs",
+  "version": "1.0.0",
+  "description": "clojurescript helloworld run in nodejs",
+  "main": "index.js",
+  "dependencies": {
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "clj -m cljs.main --target node --output-to main.js -c runinnodejs.core",
+    "build:win": "java -cp \"cljs.jar;src\" cljs.main --target node --output-to main.js -c runinnodejs.core",
+    "start": "npm run build && node main.js",
+    "start:win": "npm run build:win && node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

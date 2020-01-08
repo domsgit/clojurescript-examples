@@ -15,3 +15,6 @@ pom.xml.asc
 
 # ignore cljs.jar
 /**/*.jar
+# ignore all folder's out folder
+/**/out
+/**/node_modules
